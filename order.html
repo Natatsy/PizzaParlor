@@ -6,10 +6,85 @@
          Assignment: Cheech's Flexible Pizza Parlor
          File: order.html
       -->
+    <script src="https://kit.fontawesome.com/026d99ff5d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="utf-8">
-    <title>Cheech's Flexible Pizza Parlor</title>
+    <title>Order Form</title>
   </head>
   <body>
-
+    <header>
+      <nav>
+        <a href="#">Home</a>
+        <a href="order.html">Order Online</a>
+        <a href="Menu.html">Menu</a>
+        <a href="#">Our Location</a>
+      </nav>
+    </header>
+    <h2>Order Your Pizza</h2>
+    <div class="colm1">
+      <form method="get" action="thankyou-1.html">
+        <fieldset class="info">
+          <legend>
+            Contact Information
+          </legend>
+        <label for="fname">
+          Name:
+          <input autofocus type="text" name="fname" id="fname" required placeholder="First Name"/>
+        </label>
+        <label for="Lname">
+          Last Name:
+          <input type="text" name="Lname" id="Lname" required placeholder="Last Name" />
+        </label>
+        <label for="phone">
+          Phone number:
+          <input type="text" name="phone" id="phone" required placeholder="Phone number">
+        </label>
+        </fieldset>
+        <fieldset class="pizza">
+          <legend>
+            Reservation request
+          </legend>
+          <select id="sauce" name="sauce">
+          <option value="one">White Sauce</option>
+          <option value="two">Red Sauce</option>
+          </select>
+          <select id="pizza" name="pizza">
+            <option value="first">Ham pizza</option>
+            <option value="second">Peperoni pizza</option>
+            <option value="third">Cheese pizza</option>
+            <option value="fourth">Salad pizza</option>
+            <option value="fifth">Simple pizza</option>
+            <option value="six">Veggie pizza</option>
+          </select>
+          <input type="number" id="quantity" name="quantity" min="1" max="20" placeholder="1"><br>
+        </fieldset>
+        <fieldset class="delivery">
+          <legend>Delivery Options</legend>
+          <input type="checkbox" id="option1" name="option1" value="option">
+          <label for="option1">Delivery</label><br>
+          <input type="checkbox" id="option2" name="option2" value="option">
+          <label for="option2">Pick Up</label><br>
+        </fieldset>
+        <fieldset class="text">
+          <legend>Anything els you might need?</legend>
+          <textarea name="message" rows="10" cols="30">
+          </textarea>
+        </fieldset>
+        <input class="submit" type="submit" value="submit" />
+      </form>
+      </div>
+      <div class="colm2">
+        <blockquote class="review">
+       <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+       <p>I loved the Ham and Peperoni pizzas, it was melting in my mought. Never had to try something
+       so delicious.</p>
+      </blockquote>
+      <blockquote class="socials">
+        <i class="fab fa-instagram"></i><i class="fab fa-twitter"></i><i class="fab fa-facebook-f"></i><i class="fab fa-linkedin-in"></i>
+      </blockquote>
+      </div>
+    <footer>
+      Great pizza &copy; New york 15st 88885 &nbsp; Call: <a href="tel:+18659999625">(865)999-9625</a>
+    </footer>
   </body>
 </html>
