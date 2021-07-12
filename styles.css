@@ -33,7 +33,33 @@ nav a:hover {
 }
 section.menue {
   display: flex;
+  flex-wrap: wrap;
+
+}
+div {
   flex-basis: 50%;
-  justify-content: space-between;
-  justify-content: space-around;
+}
+section.menue>div>img {
+  padding-left: 120px;
+}
+
+h2 {
+  background: linear-gradient(to top left, #33ccff 14%, #ff0000 99%);
+  text-align: center;
+
+}
+p {
+    background: linear-gradient(to top left, #33ccff 14%, #ff0000 99%);
+    text-align: center;
+    font-size: 1.5em;
+}
+footer {
+  color: white;
+  background-color: gray;
+  text-align: center;
+  font-size: 1em;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
 }
