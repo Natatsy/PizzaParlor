@@ -27,6 +27,7 @@ nav a {
   font-size: 30px;
   text-decoration: none;
   margin-right: 80px;
+  text-align: center;
 }
 nav a:hover {
   color: #fdeb01;
@@ -38,6 +39,11 @@ section.menue {
 }
 div {
   flex-basis: 50%;
+}
+div.container {
+  background: linear-gradient(to top left, #33ccff 14%, #ff0000 99%);
+  opacity: 75%;
+
 }
 section.menue>div>img {
   padding-left: 120px;
@@ -62,4 +68,55 @@ footer {
   left: 0;
   right: 0;
   position: fixed;
+}
+section.order {
+  display: flex;
+  flex-direction: row;
+}
+div.colm1 {
+  flex-basis: 50%;
+  background: linear-gradient(to top left, #33ccff 14%, #ff0000 99%) ;
+  opacity: 75%;
+}
+div.colm2 {
+  flex-basis: 50%;
+  background: linear-gradient(to top left, #33ccff 14%, #ff0000 99%);
+  opacity: 75%;
+}
+article {
+  font-size: 2em;
+}
+i {
+  text-align: center;
+  border: double 1px black;
+  margin-left: 15px;
+}
+blockquote {
+  display: flex;
+  flex-direction: row;
+}
+blockquote.review {
+ flex-basis: 50%;
+ flex-wrap: wrap;
+}
+blockquote.socials {
+  flex-basis: 50%;
+}
+@media screen and (max-width:568px) {
+  nav{
+    flex-direction: column;
+  }
+}
+section.menue>div>img {
+  padding-left: 30px;
+}
+
+@media screen and (max-width:578px) {
+  section.order {
+    flex-wrap: wrap;
+    flex-direction: column;
+    }
+  blockquote.socials {
+    flex-direction: column;
+  }
 }
