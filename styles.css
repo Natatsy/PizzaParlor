@@ -3,3 +3,37 @@
      Date:   07/10/2021
      Assignment: Cheech's Flexible Pizza Parlor
 */
+body {
+  background-image: url(logo.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+header {
+  background: linear-gradient(to top left, #33ccff 14%, #ff0000 99%);
+  top: 0;
+  position: sticky;
+}
+h1 {
+  color: white;
+  text-align: center;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+}
+nav a {
+  color: black;
+  font-size: 30px;
+  text-decoration: none;
+  margin-right: 80px;
+}
+nav a:hover {
+  color: #fdeb01;
+}
+section.menue {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: space-between;
+  justify-content: space-around;
+}
